@@ -2,10 +2,6 @@
 # dockerfile to build libmxnet.so on GPU
 FROM nvidia/cuda:8.0-cudnn5-devel
 
-RUN pwd
-
-RUN ls -l
-
 COPY install/cpp.sh install/
 RUN install/cpp.sh
 
