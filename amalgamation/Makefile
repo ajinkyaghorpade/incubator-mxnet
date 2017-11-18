@@ -39,7 +39,7 @@ ifneq ($(MIN), 1)
         
 	# Define which blas is installed. Uses OpenBLAS by default.
 	ifeq ($(USE_BLAS), atlas)
-                LDFLAGS += -lcblas
+                LDFLAGS += -lsatlas
         else ifeq ($(USE_BLAS), blas)
                 LDFLAGS += -lblas
         else
